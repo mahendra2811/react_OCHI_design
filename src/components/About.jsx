@@ -3,7 +3,7 @@ import { GoDotFill } from "react-icons/go";
 
 function About() {
     return (
-        <div className='w-full p-20 h-screen bg-[#cdea68] rounded-tl-3xl rounded-tr-3xl  text-black '>
+        <div className='w-full p-14  h-screen bg-[#cdea68] rounded-tl-3xl rounded-tr-3xl  text-black '>
             <h1 className="font-['Neue Montreal'] text-[3vw] leading-[4vw] tracking-tight  " >Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great peo­ple.</h1>
 
             <div className="w-full flex gap-5 border-t-[1px] mt-20 border-[#687537] pt-10">
@@ -15,9 +15,7 @@ function About() {
                         </button>
                     </div>
                 </div>
-                <div className=" w-1/2 h-[70vh] bg-[#808d51] flex gap-5 rounded-3xl">
-
-                </div>
+                {/* <div className=" w-1/2 h-[70vh] bg-[#808d51] flex gap-5 rounded-3xl"></div> */}
 
             </div>
 

@@ -47,10 +47,10 @@ function LandingPage() {
           ].map((item, index) => (
             <p key={index} className="text-md font-light tracking-tight leading-none " >{item}</p>
           ))}
-          <div className="start flex items-center uppercase ">
+          <div className="start flex items-center uppercase mt-2  ">
             <div className='px-5 py-2 border-[2px] border-zinc-500 font-light text-md capitalize rounded-full ' >START THE PROJECT</div>
 
-            <div className='px-2 py-2 mx-1 border-[2px] border-zinc-500 justify-center text-xl   rounded-full' > <BsArrowUpRight /></div>
+            <div className='p-2  mx-1 border-[2px] border-zinc-500 justify-center text-2xl   rounded-full' > <BsArrowUpRight /></div>
           </div>
         </div>
 
