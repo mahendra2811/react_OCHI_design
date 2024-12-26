@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { BsArrowUpRight } from "react-icons/bs";
+
 
 function LandingPage() {
   return (
@@ -11,7 +12,7 @@ function LandingPage() {
             return (
               <div className="masker" key={index}>
               <div className='w-fit flex items-end overflow-hidden'>
-                {index === 1 && (<div className='w-[7vw] h-[5vw] bg-red-500 relative  rounded-md' ></div>)}
+                {index === 1 && (<div className='w-[7vw] h-[5vw] m-2 bg-red-500 relative  rounded-md' ></div>)}
                 <h1 className="uppercase text-[7vw] leading-[5.7vw]  font-['Founders_Grotesk_X-Condensed']  font-extrabold h-full"  >
                   {item}
                 </h1>
