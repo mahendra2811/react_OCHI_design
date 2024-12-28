@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import eyeBg from '../assets/eyeBg.png';
 
 function Eyes() {
 
@@ -18,7 +19,11 @@ function Eyes() {
     })
     return (
         <div className="eyes w-full h-screen overflow-hidden">
-            <div data-scroll data-scroll-speed="-.7" className="relative w-full bg-cover bg-center h-full bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')]">
+            <div 
+            data-scroll
+             data-scroll-speed="-.7"
+              className="relative w-full bg-cover bg-center h-full "
+              style={{ backgroundImage: `url(${eyeBg})` }}>
                 <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex gap-10">
                     <div className="flex items-center justify-center bg-zinc-100 rounded-full w-[15vw] h-[15vw]">
                         <div className="bg-zinc-900 relative rounded-full w-2/3  h-2/3 ]">

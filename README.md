@@ -32,33 +32,33 @@ This project is built using the following technologies:
 
 To get started with the project, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/ochi-design-clone.git
-   ```
-2. **Navigate to the project directory:**:
+        1. **Clone the repository**:
+        ```bash
+        git clone https://github.com/yourusername/ochi-design-clone.git
+        ```
+        2. **Navigate to the project directory:**:
 
-   ```bash
-   cd ochi-design-clone
+        ```bash
+        cd ochi-design-clone
 
-   ```
+        ```
 
-3. **Install dependencies:**:
+        3. **Install dependencies:**:
 
-```bash
-npm install
-```
+        ```bash
+        npm install
+        ```
 
-4. **Run the development server:**:
-   ```bash
-   npm run dev
-   ```
-4. **Open your browser and visit http://localhost:3000 to see the project in action!**:
-```bash
-   http://localhost:3000
-   ```
+        4. **Run the development server:**:
+        ```bash
+        npm run dev
+        ```
+        4. **Open your browser and visit http://localhost:3000 to see the project in action!**:
+        ```bash
+        http://localhost:3000
+        ```
 
-##Screenshots
+## Screenshots
 ![Screenshot 1](./public/vite.svg)
 ![Screenshot 2](./public/vite.svg)
 
