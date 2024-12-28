@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <>
-            <div className="w-full h-screen bg-zinc-700 flex   ">
+            <div className="w-full h-screen mb-0  bg-zinc-700 flex   ">
                 <div className="w-1/2 h-full flex  justify-center relative   ">
                     <h1 className="text-white text-9xl font-bold ml-10 uppercase   top-20 absolute -mb-10  ">eye opening</h1>
                     <img className='w-32 bottom-5 left-10 absolute' src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg" alt="" />

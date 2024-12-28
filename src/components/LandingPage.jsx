@@ -1,15 +1,20 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { BsArrowUpRight } from "react-icons/bs";
+import image from '../assets/image.png' ;
 
 
 function LandingPage() {
 
   return (
     <div>
-      <div data-scroll data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="-.20"
+        className='w-full h-screen bg-zinc-900 pt-1'>
 
-        <div className="textstructure mt-52 px-20">
+        <div className="textstructure mt-36 px-20">
           {["WE CREATE", "Eye opening", "Presentations"].map((item, index) => {
             return (
               <div className="masker" key={index}>
@@ -17,9 +22,12 @@ function LandingPage() {
                   {index === 1 && (
                     <motion.div
                       initial={{ width: '0' }}
-                      animate={{ width: "9vw" }}
-                      transition={{ease:[0.76, 0, 0.24, 1] , duration: '500ms' }}
-                      className='w-[9vw] h-[5vw] top-[1vw] m-2 bg-red-500 relative  rounded-md' ></motion.div>)}
+                      animate={{ width: "10vw" }}
+                      transition={{ ease: [0.76, 0, 0.24, 1], duration: 2 }}
+                      className='w-[9vw] h-[4.8vw] top-[0.2vw] m-2  relative  rounded-md' >
+                        <img src={image} alt="" className='w-full h-full overflow-hidden rounded-lg ' />
+
+                    </motion.div>)}
                   <h1 className="uppercase text-[7vw] leading-[5.7vw]  font-['Founders_Grotesk_X-Condensed']  font-extrabold h-full"  >
                     {item}
                   </h1>
@@ -56,7 +64,7 @@ function LandingPage() {
             <p key={index} className="text-md font-light tracking-tight leading-none " >{item}</p>
           ))}
           <div className="start flex items-center uppercase mt-2  ">
-            <div className='px-5 py-2 border-[2px] border-zinc-500 font-light text-md capitalize rounded-full ' >START THE PROJECT</div>
+            <div className='px-5 py-2 border-[1px] border-zinc-500 font-light text-base capitalize rounded-full ' >START THE PROJECT</div>
 
             <div className='p-2  mx-1 border-[2px] border-zinc-500 justify-center text-2xl   rounded-full' > <BsArrowUpRight /></div>
           </div>
