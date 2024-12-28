@@ -1,23 +1,30 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { BsArrowUpRight } from "react-icons/bs";
 
 
 function LandingPage() {
+
   return (
     <div>
-      <div className='w-full h-screen bg-zinc-900 pt-1'>
+      <div data-scroll data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
 
         <div className="textstructure mt-52 px-20">
           {["WE CREATE", "Eye opening", "Presentations"].map((item, index) => {
             return (
               <div className="masker" key={index}>
-              <div className='w-fit flex items-end overflow-hidden'>
-                {index === 1 && (<div className='w-[7vw] h-[5vw] m-2 bg-red-500 relative  rounded-md' ></div>)}
-                <h1 className="uppercase text-[7vw] leading-[5.7vw]  font-['Founders_Grotesk_X-Condensed']  font-extrabold h-full"  >
-                  {item}
-                </h1>
+                <div className='w-fit flex items-end overflow-hidden'>
+                  {index === 1 && (
+                    <motion.div
+                      initial={{ width: '0' }}
+                      animate={{ width: "9vw" }}
+                      transition={{ease:[0.76, 0, 0.24, 1] , duration: '500ms' }}
+                      className='w-[9vw] h-[5vw] top-[1vw] m-2 bg-red-500 relative  rounded-md' ></motion.div>)}
+                  <h1 className="uppercase text-[7vw] leading-[5.7vw]  font-['Founders_Grotesk_X-Condensed']  font-extrabold h-full"  >
+                    {item}
+                  </h1>
+                </div>
               </div>
-            </div>
             );
           })}
         </div>
