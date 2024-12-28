@@ -8,11 +8,9 @@ function Eyes() {
         window.addEventListener('mousemove', (e)=>{
             let mouseX = e.clientX ;
             let mouseY = e.clientY ;
-            console.log(e.clientX, e.clientY)   ;
             let deltaX = mouseX - window.innerWidth / 2;
             let deltaY = mouseY - window.innerHeight / 2;
             var angel = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-            console.log(angel);
             setRotate(angel-180);
             
             
